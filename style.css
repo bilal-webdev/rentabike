@@ -1,0 +1,429 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#back {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #484848;
+}
+
+#nav {
+  display: flex;
+  width: 100%;
+  height: 90px;
+  padding: 0 20px;
+  /* background-color: rgb(192, 150, 150); */
+}
+
+#symbol {
+  width: 60px;
+  height: 100%;
+  /* background-color: yellowgreen; */
+}
+
+#logo {
+  width: 55px;
+  height: 35px;
+  margin-top: 25px;
+  /* margin-left: 30px;   */
+}
+
+#back #logohead {
+  color: white;
+  font-family: "Nunito";
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  /* margin-left: 30px;   */
+  /* margin-top: -3px; */
+}
+
+#options {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  height: 100%;
+  padding: 40px 0 0 0;
+  /* background-color: rgb(44, 36, 36); */
+}
+
+#options a {
+  color: rgba(255, 255, 255, 0.35);
+  text-decoration: none;
+  font-family: "Nunito";
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 90px;
+}
+
+#options :nth-child(1) {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+#nav #extra {
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.966);
+  margin-top: 39px;
+  cursor: pointer;
+}
+
+#back #heading {
+  font-family: "Roboto";
+  font-size: 100px;
+  font-weight: bold;
+  text-align: center;
+  color: rgba(255, 131, 22, 0.91);
+}
+
+#image {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: #fff; */
+}
+
+#rentbtn {
+  position: absolute;
+  left: 17.8%;
+  font-size: 12px;
+  padding: 13px 26px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+#rentbtn:hover {
+  color: white;
+  background-color: rgba(255, 131, 22, 0.91);
+  transition: all 0.3s ease-in;
+}
+
+#nxtbtn {
+  position: absolute;
+  top: 42%;
+  left: 1.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 105px;
+  /* background-color: rgb(248, 129, 129); */
+}
+
+#left {
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 15px;
+  border: 1.4px solid rgba(255, 255, 255, 0.35);
+  border-radius: 100%;
+  padding: 11px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#right {
+  color: white;
+  font-size: 15px;
+  border: 1.4px solid white;
+  border-radius: 100%;
+  padding: 11px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#lines {
+  position: absolute;
+  right: 0;
+  top: 55%;
+  transform: translate(0%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 50px;
+  height: 200px;
+  overflow: hidden;
+  /* background-color: tomato; */
+}
+
+#lines .small {
+  width: 30px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+#lines .small:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+#lines :nth-child(2) {
+  width: 45px;
+  background-color: rgba(255, 255, 255, 0.92);
+}
+
+#lines :nth-child(2):hover {
+  cursor: initial;
+  transform: none;
+}
+
+#footer {
+  position: absolute;
+  left: 18%;
+  bottom: 0;
+  display: flex;
+  width: 66%;
+  height: 11%;
+  background-color: tomato;
+}
+
+#footer .inFoot {
+  height: 100%;
+  width: calc(100% / 3);
+  /* background-color: #fff; */
+}
+
+#footer #first {
+  padding: 10px 20px;
+  color: rgba(255, 255, 255, 0.92);
+  letter-spacing: 1px;
+  font-family: "Roboto";
+  background-color: #242121;
+}
+
+#first h5 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#first p {
+  font-size: 12px;
+  color: rgba(238, 125, 26, 0.92);
+  margin-top: 15px;
+}
+
+#footer #second {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Roboto";
+  color: white;
+  font-size: 13px;
+  background-color: #ee7c1a;
+}
+
+#second small {
+  letter-spacing: 0.7px;
+  line-height: 15px;
+}
+
+#footer #third {
+  padding: 11px 13px;
+  font-family: "Roboto";
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 11px;
+  letter-spacing: 0.7px;
+  font-weight: normal;
+  background-color: #242121;
+}
+
+@media (max-width: 500px) {
+  #back {
+    overflow: hidden;
+  }
+
+  #nav {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 30px;
+    /* background-color: rgb(192, 150, 150); */
+  }
+
+  #symbol {
+    min-width: 40px;
+    height: 100%;
+    /* background-color: yellowgreen; */
+  }
+
+  #logo {
+    min-width: 40px;
+    height: 28px;
+    margin-top: 18px;
+    /* margin-left: 30px;   */
+  }
+
+  #options {
+    display: none;
+  }
+
+  #nav #extra {
+    font-size: 23px;
+    margin-top: 25px;
+  }
+
+  #back #heading {
+    font-size: 65px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  #image > img {
+    width: 350px;
+    height: 270px;
+  }
+
+  #rentbtn {
+    margin-top: 10px;
+    left: 15%;
+    font-size: 10.5px;
+    padding: 12px 22px;
+  }
+
+  #nxtbtn {
+    top: 50%;
+    left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32px;
+    height: 100px;
+    /* background-color: rgb(248, 129, 129); */
+  }
+
+  #left {
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  #right {
+    color: white;
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  #lines .small {
+    width: 20px;
+  }
+
+  #lines .small:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+  }
+
+  #lines :nth-child(2) {
+    width: 45px;
+    background-color: rgba(255, 255, 255, 0.92);
+  }
+
+  #lines :nth-child(2):hover {
+    cursor: initial;
+    transform: none;
+  }
+
+  #footer {
+    left: 0%;
+    width: 100%;
+    height: 25%;
+  }
+
+  #footer #first {
+    padding: 8px 10px;
+  }
+
+  #footer #second {
+    align-items: center;
+    font-family: "Roboto";
+    color: white;
+    font-size: 13px;
+    padding: 2px 0px 0px 2px;
+    background-color: #ee7c1a;
+  }
+
+  #second small {
+    letter-spacing: 0.5px;
+    line-height: 10px;
+  }
+
+  #footer #third {
+    padding: 4px 5px;
+    font-size: 11px;
+    letter-spacing: 0.7px;
+  }
+}
+
+@media (max-width: 370px) {
+  #logo {
+    width: 35px;
+    height: 25px;
+  }
+
+  #back #logohead {
+    font-size: 7px;
+  }
+
+  #nav #extra {
+    font-size: 21px;
+    margin-top: 20px;
+  }
+
+  #back #heading {
+    margin-top: -10px;
+    font-size: 50px;
+  }
+
+  #image > img {
+    width: 310px;
+    height: 250px;
+  }
+
+  #rentbtn {
+    font-size: 9.8px;
+    padding: 11px 20px;
+  }
+
+  #nxtbtn {
+    top: 50%;
+    left: 2%;
+    width: 30px;
+    height: 90px;
+  }
+
+  #first h5 {
+    font-size: 13.5px;
+  }
+
+  #first p {
+    font-size: 11px;
+    margin-top: 10px;
+  }
+
+  #footer #second {
+    font-size: 10.5px;
+  }
+
+  #second small {
+    letter-spacing: 0.6px;
+    line-height: 14px;
+  }
+
+  #footer #third {
+    padding: 6px 8px;
+    font-size: 9.5px;
+    letter-spacing: 0.6px;
+  }
+}
